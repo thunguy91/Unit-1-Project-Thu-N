@@ -1,11 +1,14 @@
-const Footer = () => {
+export default function Footer(){
 
     return(
-        <div>
-            <button>About</button>
-            <button>Contact</button>
-        </div>
+        <footer>
+          <h2>
+            Radii
+          </h2>
+          <nav>
+            <p>About</p>
+            <p>Contact</p>
+          </nav>
+        </footer>
     )
 }
-
-export default Footer;
