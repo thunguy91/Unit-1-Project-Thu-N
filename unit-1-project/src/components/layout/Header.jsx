@@ -1,19 +1,11 @@
-
-const Header = () => {
+export default function Header(){
     return (
-            <div>
-                <H1>
-                    Radii
-                </H1>
-                <nav>
-                <button> About</button>
-                <button> Contact</button> 
-                <button>Log In</button>
-                <button>Sign Up</button>
-                </nav>
-            </div>
-
+        <header>
+          <h1>Radii</h1>
+            <nav>
+              <button>Log In</button>
+              <button>Sign Up</button>
+            </nav>
+        </header>
     )
 }
-
-export default Header;
