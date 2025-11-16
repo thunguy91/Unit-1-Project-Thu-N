@@ -1,0 +1,185 @@
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* .logo {
+    display: flex;
+    align-items: baseline;
+} */
+/* Logo section */
+.logo-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #0f283b;
+}
+
+.pin-icon {
+  width: 20%; /* scale the icon */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #E6FEFE;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #a0d6d6; /* light blue similar to your image */
+}
+
+/* Form container */
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Form elements styling */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #555;
+}
+
+.form-container h6 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #333;
+}
+
+.form-container a:hover {
+  color: #555;
+}
+
+
+
+
+
+
+
+/* div {
+  display: flex;
+  justify-content: center; /* center the content horizontally */
+  /* align-items: center;    center the content vertically if page height allows */
+  /* min-height: 100vh;      take full viewport height */
+  /* gap: 50px;              space between image and form */
+  /* padding: 20px; */
+  /* box-sizing: border-box;
+} */ 
+
+/* Image container */
+/* .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img { */
+  /* max-width: 250px;   scale down the image */
+  /* height: auto;
+} */
+
+/* Form container */
+/* .form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column; */
+  /* justify-content: center; center the form vertically relative to image
+  max-width: 400px;
+  width: 100%;
+} */
+
+/* Form elements styling */
+/* .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+} */
+
+/* Button styling */
+/* .form-container button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #555;
+}
+
+/* Link styling */
+/* .form-container h6 {
+  margin-top: 15px;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #333;
+}
+
+.form-container a:hover {
+  color: #555;
+} */ 
