@@ -4,8 +4,7 @@ import Header from "../layout/Header";
 export default function AboutPage(){
     return(
         <div>
-            <Header/>
-            <h2>About Radii</h2>
+            <h2 className="page-title">About Radii</h2>
             <h4><em>Discover by Curiosity, Not Algorithms</em></h4>
             <p>
                 Radii is built for explorers — the ones who wander without a destination, follow instinct over ratings, and find beauty in the in-between places.
@@ -26,7 +25,6 @@ Radii connects people to places in deeper, more authentic ways.
                 Every journey begins with a spark of curiosity.
 Radii helps you follow it — one discovery at a time.
             </p>
-            <Footer/>
         </div>
     )
 }

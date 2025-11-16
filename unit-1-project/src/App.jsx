@@ -1,19 +1,33 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router';
+import { Link, Routes, Route } from 'react-router';
 import './App.css'
 import Header from './components/layout/Header';
-import Main from './components/layout/Main';
 import Footer from './components/layout/Footer';
+import ExplorePage from './components/pages/ExplorePage';
+import SignUp from './components/pages/SignUpPage';
+import Home from './components/pages/Home';
+import AboutPage from './components/pages/AboutPage.jsx'
+import './index.css'
+import LogIn from './components/pages/LogInPage';
+import ContactPage from './components/pages/ContactPage.jsx';
 
 function App() {
   return (
       <div>
-        <Header />
-        <Main />
-        <Footer/>
-        <br />
+        <Header/>
         
+        <Routes>
+          <Route path="/" element={<LogIn/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/explore" element={<ExplorePage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+
+        </Routes>
+        <Footer/>
       </div>
+
 
       
   )
