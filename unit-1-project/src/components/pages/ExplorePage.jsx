@@ -1,6 +1,7 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import './ExplorePage.css';
+import '../../App.css'
 
 const center = { lat: 39.9526, lng: -75.1652 };
 

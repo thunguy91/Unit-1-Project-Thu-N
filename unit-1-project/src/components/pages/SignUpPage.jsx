@@ -1,6 +1,7 @@
 import Radii from '../../assets/RADII.png'
-import './SignUpPage.css'
-import DropPin from '../../assets/DropPin.png'
+import './SignUpPage.css';
+import '../../App.css';
+import DropPin from '../../assets/DropPin.png';
 
 export default function SignUp(){
     return(
@@ -15,52 +16,24 @@ export default function SignUp(){
 
             <div className="form-container">
                 <form onSubmit={(e) => e.preventDefault()}>
-                <label>Name:</label>
-                <input type="text" />
-                
-                <label>Email:</label>
-                <input type="email" />
-                
-                <label>Password:</label>
-                <input type="password" />
-                
-                <label>Confirm Password:</label>
-                <input type="password" />
-
-                <button type="submit">Sign Up</button>
+                    <label>Name:</label>
+                    <input type="text" />
+                    
+                    <label>Email:</label>
+                    <input type="email" />
+                    
+                    <label>Password:</label>
+                    <input type="password" />
+                    
+                    <label>Confirm Password:</label>
+                    <input type="password" />
                 </form>
-                <h6>
+                <br />
+                <button className='btn'>Sign Up</button>
+                <h4>
                 Already have an account? <a href="#"><strong>Log in</strong>.</a>
-                </h6>
+                </h4>
             </div>
         </div>
-
-        // <div>
-        //     <div className='image-container'>
-        //         <img src={Radii} alt="Radii Logo" className='img'/>
-        //     </div>
-        //     <div className='form-container'>
-        //         <form onSubmit = {(e) => e.preventDefault()}>
-        //             <label>Name:</label>
-        //             <br />
-        //             <input type="text" name="" id="" />
-        //             <br />
-
-        //             <label>Email:</label>
-        //             <br />
-        //             <input type="email" name="" id="" />
-        //             <br />
-        //             <label>Password:</label>
-        //             <br />
-        //             <input type="password" name="" id="" />
-        //             <br />
-        //             <label>Confirm Password:</label>
-        //             <br />
-        //             <input type="password" name="" id="" />
-        //         </form>
-        //         <br />
-        //         <button>Sign Up</button>
-        //         <h6>Already have an account? <a href=""><strong>Log in</strong>.</a></h6>            </div>
-        // </div>
     )
 }

@@ -1,27 +1,27 @@
-
-// import stockPhoto from './assets/mobilePhoneNav.jpg'
 import { Link } from 'react-router';
 import stockPhoto from '../../assets/mobilePhoneNav.jpg'
-import Header from '../layout/Header';
+import '../../App.css';
+import './Home.css'
 
 function Home(){
     return(
-        <div>
-        <main>
-            <img src= {stockPhoto} alt="phone showing navigation" />
+        <div className='home-form'>
+            <div className='img-container'>
+                <img src= {stockPhoto} alt="phone showing navigation" />
+            </div>
             <div className='form-container'>
                 <form action="submit">
                     <label>Select starting location:</label>
                     <input type="text" />
-                    <button>Use current location</button>
+                    <button className='current-loc-btn'>Use current location</button>
                     <br />
                     <label>Select radius:</label>
                     <input type="range" min={.25} max={50} />
+                    <p className='radius-output'></p>
                     <br />
                 </form>                    
-                <button type='submit'><Link to= '/explore'>Explore!</Link></button>
+                <Link to= '/explore' className='btn'>Explore!</Link>
             </div>
-        </main>
         </div>
     )
 }
