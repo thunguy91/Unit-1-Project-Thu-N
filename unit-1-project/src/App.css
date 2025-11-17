@@ -3,6 +3,32 @@
   font-weight: normal;
 }
 
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+h1, h2, h1 .logo-link {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 100;
+}
+
+h4 em{
+  font-weight: 600;
+  font-size: 25px;
+}
+
+address {
+  font-style: normal;
+  font-size: 20px;
+}
+
 button, .form-container .btn{
   padding: 0.15rem .75rem;
   background-color:#0f283b;
