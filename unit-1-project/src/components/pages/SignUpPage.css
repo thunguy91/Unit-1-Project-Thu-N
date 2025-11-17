@@ -16,12 +16,12 @@ button {
   gap: 50px;
   padding: 20px 50px;
   box-sizing: border-box;
-  font-family: "Elms Sans", sans-serif;
+  /* font-family: "Elms Sans", sans-serif; */
 }
 
 .logo-container {
   width: 50%;                
-  height: 75vh;             
+  height: 75vh;      
   background-color: #0f283b;
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@ button {
 
 .tagline {
   font-size: 18px;
-  line-height: 2.5;
+  line-height: 2;
   color: #a0d6d6;
-  margin-top: 15px;
+  margin-top: 1px;
   font-style: italic;
 }
 
