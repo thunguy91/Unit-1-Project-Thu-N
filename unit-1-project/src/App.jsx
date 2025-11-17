@@ -14,9 +14,13 @@ import ContactPage from './components/pages/ContactPage.jsx';
 function App() {
   return (
       <div>
-        <Header/>
-        
-        <Routes>
+        {/* <Header/> */}
+        <SignUp/>
+        {/* <Home/> */}
+        {/* <ExplorePage/> */}
+
+
+        {/* <Routes>
           <Route path="/" element={<LogIn/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/home" element={<Home/>}/>
@@ -24,7 +28,7 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
 
-        </Routes>
+        </Routes> */}
         <Footer/>
       </div>
 

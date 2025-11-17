@@ -1,0 +1,151 @@
+.form-container .current-loc-btn {
+  padding: 0.15rem .75rem;
+  background-color:#0f283b;
+  border-radius: 30px;
+  color: #E6FEFE;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 8.5rem;
+  height: auto;
+  font-size: 13px;
+  margin: auto;
+}
+
+.form-container .btn {
+  width: 9rem;
+  text-align: center;
+  margin: auto;
+}
+
+.home-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+}
+
+.img-container img{
+display: flex;
+width: 100%;
+min-height: 75vh;
+border-radius: 12px;
+object-fit: cover;
+
+}
+
+.form-container {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding: 30px;
+ 
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center; 
+  width: 100%;      
+  display: block;    
+}
+
+.form-container input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+/* Media Query for iPad Mini - max-width: 768px */
+
+@media (max-width: 768px) {
+  .home-form {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 5px;
+    gap: 2px;
+    box-sizing: border-box; 
+  }
+
+  .img-container{
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
+  .img-container img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position:  30% 70%;
+  }
+  .form-container {
+    flex: 1;         
+    flex-direction: column;
+    max-height: 50vh;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Media Query for Galaxy Z Fold 5 (344 x 882) */
+
+@media screen and (max-width: 344px) {
+  .home-form {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: .25px;
+    gap: 2px;
+    box-sizing: border-box; 
+  }
+
+  .img-container{
+    width: 330px;
+    max-height: 450px;
+    /* overflow: hidden; */
+
+  }
+
+  .img-container img{
+    display: block;
+    object-fit: fill;
+    object-position: px 20px;
+  }
+
+  .form-container{
+    max-width: 100%;
+    max-height: 50vh;
+    align-content: center;
+    padding-bottom: 20px;
+
+  }
+.form-container label {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center; 
+  width: 100%;      
+  display: block;    
+}
+
+.form-container input {
+
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  max-width: 100%;
+}
+}

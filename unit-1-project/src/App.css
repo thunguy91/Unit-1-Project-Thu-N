@@ -1,121 +1,24 @@
-button {
+* {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: normal;
+}
+
+button, .form-container .btn{
   padding: 0.15rem .75rem;
-  background-color: #0f283b;
+  background-color:#0f283b;
   border-radius: 30px;
   color: #E6FEFE;
   cursor: pointer;
-  transition: background 0.2s;
+  /* transition: background 0.2s, border-color 0.5s ease; */
 }
 
-button:hover {
+button:hover, .btn:hover, .form-container .current-loc-btn:hover, .form-container .btn:hover {
   background-color: #E6FEFE;
   color: #0f283b;
+  border: 1px solid #0f283b;
+  border-color: #0f283b; 
 }
 
 li {
 line-height: 2;
 }
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap');
-
-.unna-bold {
-  font-family: "Unna", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align: center;
-} */
-
-/* Global font and background */
-/* body {
-  font-family: 'Unna', serif;
-  background-color: #f9fafb;
-  color: #222;
-  
-} */
-
-/* Style the header globally */
-/* header {
-  background-color: #0f283b;
-  padding: 1rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-} */
-
-/* Example: Style your app title */
-/* header h1{
-  font-size: 3rem;
-  font-family: 'Unna', serif;
-  font-weight: 700;
-  color: #E6FEFE;
-  letter-spacing: 1px;
-  text-align: left;
-}
-
-header img {
-  width: 100px;
-  height: 100px;
-  padding-bottom: 0px;
-  object-fit: contain; keeps proportions */
-/* }
-
-footer {
- background-color: #0f283b;
-  padding: 1rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  color: #E6FEFE;
-} */
-
-/* a {
-    color:#b7b8ba;
-} */
-
-/* .login-wrapper {
-  display: flex;
-  padding: 3rem 2rem;
-  column-gap: 5rem;
-  width: 100%;
-}
-
-.login-img-container{
-  width: 100%;
-  background-color: #0f283b;
-  color: #E6FEFE;
-}
-.droppin-img{
-  width: 60%;
-  /* background-color:#0f283b; */
-/* } */
-/* .login-form {
-  width: 100%;
- 
-  float: right;
-}  */
-
-/* .login-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
-  padding: 100px;
-}
-
-.login-logo {
-  width: 100%;
-}
-
-.login-form {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #0f283b;
-} */
-
-/* .container {
-  width: 100%;
-  height: 400px; /* adjust to your wireframe height */
-  /* border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-} */ 
