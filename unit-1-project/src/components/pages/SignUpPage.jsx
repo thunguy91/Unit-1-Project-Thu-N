@@ -1,14 +1,14 @@
-import Radii from '../../assets/RADII.png'
 import './SignUpPage.css';
 import '../../App.css';
-import DropPin from '../../assets/DropPin.png';
-
+import dropPin from '../../assets/DropPin.png';
+import { Link } from 'react-router';
+ 
 export default function SignUp(){
     return(
         <div className="signup-page">
             <div className="logo-container">
                 <div className='logo'>
-                    <img src={DropPin} alt="Drop Pin" className="pin-icon" />
+                    <img src={dropPin} alt="Drop Pin" className="pin-icon" />
                     <h1 className="logo-text">RADII</h1>
                 </div>
                 <p className="tagline">SMALL CIRCLE.<br />BIG DISCOVERIES.<br />POWERED BY CURIOSITY.</p>
@@ -29,9 +29,9 @@ export default function SignUp(){
                     <input type="password" />
                 </form>
                 <br />
-                <button className='btn'>Sign Up</button>
+                <Link to ='/home' className='btn'>Sign Up</Link>
                 <h4>
-                Already have an account? <a href="#"><strong>Log in</strong>.</a>
+                Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
                 </h4>
             </div>
         </div>

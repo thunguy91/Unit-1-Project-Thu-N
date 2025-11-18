@@ -16,8 +16,3 @@ export default function Header(){
         </header>
     )
 }
-
-{/* <nav>
-              <button>Log In</button>
-              <button>Sign Up</button>
-            </nav> */}
