@@ -59,6 +59,24 @@ object-fit: cover;
   max-width: 100%;
 }
 
+/* added .form-group after adding .radius-output to help center <p> 11.17 */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 0.4rem;            
+  width: 100%;
+  margin-bottom: 1rem;    
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;      
+  width: 100%;
+}
+
 /* Media Query for iPad Mini - max-width: 768px */
 
 @media (max-width: 768px) {
@@ -94,6 +112,11 @@ object-fit: cover;
     width: 100%;
     box-sizing: border-box;
   }
+  .radius-output {
+    text-align: center;
+    font-size: 14px;
+  }
+
 }
 
 /* Media Query for Galaxy Z Fold 5 (344 x 882) */
@@ -118,9 +141,10 @@ object-fit: cover;
   }
 
   .img-container img{
+    /* flex-shrink: 1; */
     display: block;
-    object-fit: fill;
-    object-position: px 20px;
+    object-fit: cover;
+    object-position: 57% 80%;
   }
 
   .form-container{
@@ -141,11 +165,14 @@ object-fit: cover;
 }
 
 .form-container input {
-
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 16px;
   max-width: 100%;
+}
+
+.btn {
+  font-size: 15px;
 }
 }

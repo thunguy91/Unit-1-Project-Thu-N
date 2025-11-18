@@ -1,19 +1,24 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { useLocation } from "react-router";
 import './ExplorePage.css';
 import '../../App.css'
 
-const center = { lat: 39.9526, lng: -75.1652 };
 
 export default function ExplorePage (){
-      const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY
-  });
+    const location = useLocation();
+    const coords = location.state?.latLng;
+    const center = coords ? { lat: coords[0], lng: coords[1] } : { lat: 39.9526, lng: -75.1652 };
 
-  console.log('isLoaded:', isLoaded, 'loadError:', loadError);
+    const { isLoaded, loadError } = useJsApiLoader({
+        googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+    });
+
+//   console.log('isLoaded:', isLoaded, 'loadError:', loadError);
 
   if (loadError) return <div>Map failed to load: {String(loadError)}</div>;
   if (!isLoaded) return <div>Loading map script…</div>;
+  
     return(
         <div>
             <main className="explore-main">

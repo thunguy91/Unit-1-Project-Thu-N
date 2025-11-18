@@ -35,6 +35,7 @@ button, .form-container .btn{
   border-radius: 30px;
   color: #E6FEFE;
   cursor: pointer;
+  text-decoration: none;
   /* transition: background 0.2s, border-color 0.5s ease; */
 }
 
@@ -43,6 +44,7 @@ button:hover, .btn:hover, .form-container .current-loc-btn:hover, .form-containe
   color: #0f283b;
   border: 1px solid #0f283b;
   border-color: #0f283b; 
+  text-decoration: none;
 }
 
 li {

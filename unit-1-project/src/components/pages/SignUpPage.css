@@ -111,10 +111,9 @@ strong {
 
     .logo-container{
     width: 100%;
-    /* height: 40vh; */
     height: 35%;
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 0px 0px;
     }
 
     .pin-icon{
@@ -137,7 +136,7 @@ strong {
     .form-container {
     width: 100%;
     height: 60vh;
-    padding: 0 20px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -145,6 +144,7 @@ strong {
   }
 
     .form-container form {
+    padding-top: 5px;
     width: 100%;
     max-width: 350px; 
     display: flex;
@@ -164,8 +164,8 @@ strong {
 
 
 
-     .form-container input {
-    width: 90%;
+  .form-container input {
+    width: 100%;
     padding: 6px;
     margin: 0;
   }
@@ -182,7 +182,7 @@ strong {
   
   .logo-container {
     width: 100%;
-    height: 35vh;
+    height: 35vh; 
     padding: 20px 10px;
   }
 
