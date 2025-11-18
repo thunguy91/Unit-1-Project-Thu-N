@@ -105,7 +105,6 @@ export default function SignUp(){
                     <button type='submit' className='btn'>Sign Up</button>
                 </form>
                 <br />
-                
                 <h4>
                 Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
                 </h4>
