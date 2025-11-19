@@ -5,14 +5,14 @@ import '../../App.css'
 
 
 export default function Header(){
-    return (
-        <header>
-          <h1>
-          <img src={DropPin} alt="magnifying glass inside drop pin" />
-          <Link to='/home' className='logo-link'>
+  return (
+    <header>
+      <h1>
+        <img src={DropPin} alt="magnifying glass inside drop pin" />
+        <Link to='/home' className='logo-link'>
           Radii
-          </Link>
-          </h1>
-        </header>
-    )
+        </Link>
+      </h1>
+    </header>
+  )
 }
