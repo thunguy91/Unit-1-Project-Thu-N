@@ -29,7 +29,7 @@ address {
   font-size: 20px;
 }
 
-button, .form-container .btn{
+button, .form-container .btn, form .btn{
   padding: 0.15rem .75rem;
   background-color:#0f283b;
   border-radius: 30px;
@@ -42,9 +42,10 @@ button, .form-container .btn{
 button:hover, .btn:hover, .form-container .current-loc-btn:hover, .form-container .btn:hover {
   background-color: #E6FEFE;
   color: #0f283b;
-  border: 1px solid #0f283b;
+  border: 2px solid #0f283b;
   border-color: #0f283b; 
   text-decoration: none;
+  font-weight: bold;
 }
 
 li {

@@ -20,24 +20,24 @@ export default function SignUp(){
         let formErrors = {};
 
         if (!name.trim()) {
-            formErrors.name = "Name is required.";
+            formErrors.name = 'Name is required.';
         }
         if (!email.trim()) {
-            formErrors.email = "Email is required.";
+            formErrors.email = 'Email is required.';
         } else if (!/\S+@\S+\.\S+/.test(email)) {
-            formErrors.email = "Enter a valid email.";
+            formErrors.email = 'Enter a valid email.';
         }
 
         if (!password.trim()) {
-            formErrors.password = "Password is required.";
+            formErrors.password = 'Password is required.';
         } else if (password.length < 6) {
-            formErrors.password = "Password must be at least 6 characters.";
+            formErrors.password = 'Password must be at least 6 characters.';
         }
 
         if (!confirmPassword.trim()) {
-            formErrors.confirmPassword = "Confirm your password.";
+            formErrors.confirmPassword = 'Confirm your password.';
         } else if (confirmPassword !== password) {
-            formErrors.confirmPassword = "Passwords do not match.";
+            formErrors.confirmPassword = 'Passwords do not match.';
         }
 
         setErrors(formErrors);
@@ -49,64 +49,62 @@ export default function SignUp(){
 
 
     return(
-        <div className="signup-page">
-            <div className="logo-container">
-                <div className='logo'>
-                    <img src={dropPin} alt="Drop Pin" className="pin-icon" />
-                    <h1 className="logo-text">RADII</h1>
+        <div className= 'signup-page'>
+            <div className= 'logo-container'>
+                <div className= 'logo'>
+                    <img src={dropPin} alt= 'Drop Pin' className= 'pin-icon' />
+                    <h1 className= 'logo-text'>RADII</h1>
                 </div>
-                <p className="tagline">
+                <p className= 'tagline'>
                     SMALL CIRCLE.<br />
                     BIG DISCOVERIES.<br />
                     POWERED BY CURIOSITY.
                 </p>
             </div>
 
-            <div className="form-container">
+            <div className= 'form-container'>
                 <form onSubmit={handleSubmit}>
                     <label>Name:</label>
                     <input 
-                        type="text"
+                        type= 'text'
                         value={name}
                         onChange={(e)=> setName(e.target.value)}
                     />
-                    {errors.name && <p className="error">{errors.name}</p>}
+                    {errors.name && <p className= 'error'>{errors.name}</p>}
                     
                     <label>Email:</label>
                     <input 
-                        type="email"
+                        type= 'email'
                         value={email}
                         onChange={(e)=> setEmail(e.target.value)}
                     />
-                    {errors.email && <p className="error">{errors.email}</p>}
+                    {errors.email && <p className= 'error'>{errors.email}</p>}
                     
                     <label>Password:</label>
                     <input 
-                        type="password" 
+                        type= 'password'
                         value={password}
                         onChange={(e)=> setPassword(e.target.value)}
                     />
-                    {errors.password && <p className="error">{errors.password}</p>}
+                    {errors.password && <p className= 'error'>{errors.password}</p>}
                     
                     <label>Confirm Password:</label>
                     <input 
-                        type="password" 
+                        type= 'password'
                         value={confirmPassword}
                         onChange={(e)=> setConfirmPassword(e.target.value)}
                     />
                     {errors.confirmPassword && 
-                        <p className="error">{errors.confirmPassword}</p>
+                        <p className='error'>{errors.confirmPassword}</p>
                     }
-                    {/* {errors.confirmPassword && (
-                        <p className="error">{errors.confirmPassword}</p>
-                    )} */}
-
                     <br />
-                    <button type='submit' className='btn'>Sign Up</button>
+                    <button type= 'submit' className= 'btn'>
+                        Sign Up
+                    </button>
                 </form>
                 <br />
                 <h4>
-                Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
+                    Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
                 </h4>
             </div>
         </div>

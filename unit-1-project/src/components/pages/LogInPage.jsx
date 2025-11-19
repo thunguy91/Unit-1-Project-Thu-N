@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router'
-import mapWithPin from '../../assets/MapWithPin.jpeg'
+// import mapWithPin from '../../assets/MapWithPin.jpeg'
 import dropPin from '../../assets/DropPin.png'
 import './LogInPage.css'
 import { useState } from 'react'
