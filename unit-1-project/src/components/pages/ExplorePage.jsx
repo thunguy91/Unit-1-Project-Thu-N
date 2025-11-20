@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { useLocation } from "react-router";
 import { mockPlaces } from "../test-data/mockPlace";
+import PlaceModal from "../modals/PlaceModal";
 import './ExplorePage.css';
 import '../../App.css';
 
@@ -24,7 +25,14 @@ export default function ExplorePage() {
     const handleScrollUp = () => setStartIndex(prev => Math.max(prev - 1, 0));
     const handleScrollDown = () => setStartIndex(prev => Math.min(prev + 1, mockPlaces.length - showThumbnail));
 
+    const [selectedPlace, setSelectedPlace]= useState(null);
 
+    // ----list--- //
+    const [list, setList] = useState([]);
+    const addToList = (place)=> {
+        setList(prev => [...prev, place]);
+        setSelectedPlace(null);
+    }
 
     useEffect(() => {
         const fetchCenter = async () => {
@@ -78,8 +86,11 @@ export default function ExplorePage() {
 
                         <div className="places">
                             {visiblePlaces.map(p => (
-                                <div key={p.id} className="place-card">
-                                    <img src={p.thumbnail} alt={p.name} className="place-thumb"/>
+                                <div key={p.id} className="place-card" onClick={()=> setSelectedPlace(p)}>
+                                    <img 
+                                        src={p.thumbnail} 
+                                        alt={p.name} 
+                                        className="place-thumb"/>
                                     <p className="place-name">{p.name}</p>
                                 </div>
                             ))}
@@ -97,9 +108,13 @@ export default function ExplorePage() {
                 <h2>List:</h2> 
 
                     <ul> 
-                        <li>Place one</li> 
-                        <li>Place two</li> 
-                        <li>Place three</li> 
+                        {list.length === 0 ? (
+                            <li>No places added yet.</li>
+                        ) : (
+                            list.map((item, index) => (
+                                <li key={index}>{item.name}</li>
+                            ))
+                        )}
                     </ul>
 
                 <div className="list-container-buttons"> 
@@ -108,6 +123,14 @@ export default function ExplorePage() {
                 </div> 
             </div>
             
+            {selectedPlace && (
+                <PlaceModal 
+                    selectedPlace={selectedPlace} 
+                    onClose={() => setSelectedPlace(null)} 
+                    onAdd={addToList} 
+                />
+            )}
+
         </div>
     );
 }

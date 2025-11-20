@@ -8,15 +8,15 @@ export const mockPlaces = [
         price: "$$-$$$",
         type: ["Lebanese", "Mediterranean"],
         hours: {
-            Sunday: "7am - 10pm",
-            Monday: "Closed",
-            Tuesday: "7am - 10pm",
-            Wednesday: "7am - 10pm",
-            Thursday: "7am - 10pm",
-            Friday: "7am - 11pm",
-            Saturday: "7am - 11pm"
+            sun: "7am - 10pm",
+            mon: "Closed",
+            tues: "7am - 10pm",
+            wed: "7am - 10pm",
+            thu: "7am - 10pm",
+            fri: "7am - 11pm",
+            sat: "7am - 11pm"
         },
-        website: "http://surayaphilly.com/"
+        website: "http://surayaphilly.com/",
     },
     {
         id: 2,
@@ -27,13 +27,13 @@ export const mockPlaces = [
         price: "$$-$$$",
         type: ["Italian", "Pizza"],
         hours: {
-            Sunday: "12pm - 9pm",
-            Monday: "5pm - 9:30pm",
-            Tuesday: "5pm - 9:30pm",
-            Wednesday: "5pm - 9:30pm",
-            Thursday: "5pm - 9:30pm",
-            Friday: "12pm - 10:30pm",
-            Saturday: "12pm - 10:30pm"
+            sun: "12pm - 9pm",
+            mon: "5pm - 9:30pm",
+            tues: "5pm - 9:30pm",
+            wed: "5pm - 9:30pm",
+            thu: "5pm - 9:30pm",
+            fri: "12pm - 10:30pm",
+            sat: "12pm - 10:30pm"
         },
         website: "http://pizzeriabeddia.com/"
     },
@@ -46,13 +46,13 @@ export const mockPlaces = [
         price: "$-$$$",
         type: ["American Bar Food", "Bar"],
         hours: {
-            Sunday: "11am - 2am",
-            Monday: "11am - 2am",
-            Tuesday: "11am - 2am",
-            Wednesday: "11am - 2am",
-            Thursday: "11am - 2am",
-            Friday: "11am - 2am",
-            Saturday: "11am - 2am"
+            sun: "11am - 2am",
+            mon: "11am - 2am",
+            tues: "11am - 2am",
+            wed: "11am - 2am",
+            thu: "11am - 2am",
+            frid: "11am - 2am",
+            sat: "11am - 2am"
         },
         website: "http://johnnybrendas.com/"
     },
@@ -65,13 +65,13 @@ export const mockPlaces = [
         price: "$-$$$",
         type: ["American", "Bar"],
         hours: {
-            Sunday: "12pm - 2am",
-            Monday: "2pm - 2am",
-            Tuesday: "2pm - 2am",
-            Wednesday: "2pm - 2am",
-            Thursday: "2pm - 2am",
-            Friday: "12pm - 2am",
-            Saturday: "12pm - 2am"
+            sun: "12pm - 2am",
+            mon: "2pm - 2am",
+            tues: "2pm - 2am",
+            wed: "2pm - 2am",
+            thu: "2pm - 2am",
+            fri: "12pm - 2am",
+            sat: "12pm - 2am"
         },
         website: "http://barcade.com/"
     },
@@ -84,13 +84,13 @@ export const mockPlaces = [
         price: "$-$$$",
         type: ["American", "Cocktails", ],
         hours: {
-            Sunday: "9am - 2 PM; 5pm - 10pm",
-            Monday: "Closed",
-            Tuesday: "8am - 2 PM; 5pm - 10pm",
-            Wednesday: "8am - 2PM; 5pm - 10pm",
-            Thursday: "8am - 2PM; 5pm - 10pm",
-            Friday: "9am - 2pm; 5pm - 11pm",
-            Saturday: "9am - 2pm; 5pm - 11pm"
+            sun: "9am - 2 PM; 5pm - 10pm",
+            mon: "Closed",
+            tues: "8am - 2 PM; 5pm - 10pm",
+            wed: "8am - 2PM; 5pm - 10pm",
+            thu: "8am - 2PM; 5pm - 10pm",
+            fri: "9am - 2pm; 5pm - 11pm",
+            sat: "9am - 2pm; 5pm - 11pm",
         },
         website: "http://middlechildphilly.com/"
     },
@@ -103,7 +103,7 @@ export const mockPlaces = [
         price: "$$-$$$",
         type: ["Comedy Club", "Bar"],
         hours: {
-            status: "TBD"
+            hours: "TBD"
         },
         website: "http://punchlinephilly.com/"
     },
@@ -116,13 +116,13 @@ export const mockPlaces = [
         price: "$$$$",
         type: ["Japanese", "Omakase"],
         hours: {
-            Sunday: "5pm - 7:45pm",
-            Monday: "6pm - 8:45pm",
-            Tuesday: "Closed",
-            Wednesday: "6pm - 8:45pm",
-            Thursday: "6pm - 8:45pm",
-            Friday: "5pm - 9:30pm",
-            Saturday: "5pm - 9:30pm"
+            sun: "5pm - 7:45pm",
+            mon: "6pm - 8:45pm",
+            tues: "Closed",
+            wed: "6pm - 8:45pm",
+            thu: "6pm - 8:45pm",
+            fri: "5pm - 9:30pm",
+            sat: "5pm - 9:30pm"
         },
         website: "http://hirokisan.com/"
     },
@@ -135,13 +135,13 @@ export const mockPlaces = [
         price: "$-$$",
         type: ["American", "Burgers"],
         hours: {
-            Sunday: "11am - 10pm",
-            Monday: "11am - 10pm",
-            Tuesday: "11am - 10pm",
-            Wednesday: "11am - 10pm",
-            Thursday: "11am - 10pm",
-            Friday: "11am - 10pm",
-            Saturday: "11am - 10pm"
+            sun: "11am - 10pm",
+            mon: "11am - 10pm",
+            tues: "11am - 10pm",
+            wed: "11am - 10pm",
+            thu: "11am - 10pm",
+            fri: "11am - 10pm",
+            sat: "11am - 10pm"
         },
         website: "http://shakeshack.com/"
     },
@@ -154,13 +154,13 @@ export const mockPlaces = [
         price: "$-$$",
         type: ["Portuguese", "Cafe", "Bakery"],
         hours: {
-            Sunday: "8am - 2pm",
-            Monday: "8am - 3pm",
-            Tuesday: "Closed",
-            Wednesday: "8am - 3pm",
-            Thursday: "8am - 3pm",
-            Friday: "8am - 3pm",
-            Saturday: "8am - 3pm"
+            sun: "8am - 2pm",
+            mon: "8am - 3pm",
+            tues: "Closed",
+            wed: "8am - 3pm",
+            thu: "8am - 3pm",
+            fri: "8am - 3pm",
+            sat: "8am - 3pm"
         },
         website: "http://gildaphilly.com/"
     },
@@ -173,13 +173,13 @@ export const mockPlaces = [
         price: "$$$",
         type: "Southern Thai",
         hours: {
-            Sunday: "11am - 2pm; 5pm - 10pm",
-            Monday: "5pm - 10pm",
-            Tuesday: "5pm - 10pm",
-            Wednesday: "5pm - 10pm",
-            Thursday: "5pm - 10pm",
-            Friday: "5pm - 11pm",
-            Saturday: "11am - 2pm; 5pm - 11pm"
+            sun: "11am - 2pm; 5pm - 10pm",
+            mon: "5pm - 10pm",
+            tues: "5pm - 10pm",
+            wed: "5pm - 10pm",
+            thu: "5pm - 10pm",
+            fri: "5pm - 11pm",
+            sat: "11am - 2pm; 5pm - 11pm"
         },
         website: "http://kalayaphilly.com/"
     }
