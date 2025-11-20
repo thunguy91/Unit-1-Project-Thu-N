@@ -7,7 +7,6 @@
   gap: 50px;
   padding: 20px 50px;
   box-sizing: border-box;
-  /* font-family: "Elms Sans", sans-serif; */
 }
 
 .logo-container {
@@ -25,7 +24,6 @@
 .pin-icon {
   width: 150px;
   height: auto;
-  /* display: flex; */
   margin-bottom: 25px;
 }
 
@@ -57,7 +55,6 @@
 
     .logo-container{
     width: 100%;
-    /* height: 40vh; */
     height: 35%;
     padding-top: 100px;
     padding-bottom: 0;

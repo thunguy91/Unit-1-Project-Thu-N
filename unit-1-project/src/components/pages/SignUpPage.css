@@ -16,7 +16,6 @@ button {
   gap: 50px;
   padding: 20px 50px;
   box-sizing: border-box;
-  /* font-family: "Elms Sans", sans-serif; */
 }
 
 .logo-container {
@@ -34,7 +33,7 @@ button {
 .pin-icon {
   width: 150px;
   height: auto;
-  /* display: flex; */
+
   margin-bottom: 25px;
 }
 
