@@ -34,7 +34,6 @@
 
 .modal-img {
     height: 32vh;
-    /* height: 350px; */
     border-radius:15px;
     object-fit: cover;
 }
@@ -62,3 +61,19 @@
     font-weight: bold;
 }
 
+
+/* Media Query for Galaxy Z Fold 5 (344 x 882) */ 
+
+@media screen and (max-width: 344px) {
+    .modal {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 70vh;
+}
+ 
+}
