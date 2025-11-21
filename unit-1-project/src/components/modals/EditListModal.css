@@ -1,0 +1,40 @@
+.rmv-btn {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    font-size: 10px;
+    width: 50px;
+    height: 17px;             
+    text-align: center;         
+}
+
+.edit-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    cursor: grab;
+    transition: background 0.2s ease;
+}
+
+.item-name {
+    flex: 1;
+    text-align: left;
+}
+
+.item-number {
+    width: 24px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #444;
+    user-select: none;
+    padding-right: 10px;
+}
+
+.done-edit-btn {
+    padding-top: 50px;
+}

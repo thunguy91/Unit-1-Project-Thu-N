@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router'
 import dropPin from '../../assets/DropPin.png'
-import './LogInPage.css'
+import './stylesheets/LogInPage.css'
 import { useState } from 'react'
 
 export default function LogIn(){

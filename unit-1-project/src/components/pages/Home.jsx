@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import stockPhoto from '../../assets/mobilePhoneNav.jpg';
 import '../../App.css';
-import './Home.css';
+import './stylesheets/Home.css';
 import mockStartLocation from '../test-data/mockStartLocation';
 
 function Home() {

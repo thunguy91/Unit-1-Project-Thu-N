@@ -1,4 +1,4 @@
-import './ContactPage.css'
+import './stylesheets/ContactPage.css'
 
 
 export default function ContactPage(){
