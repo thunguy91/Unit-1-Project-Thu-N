@@ -24,8 +24,25 @@
 .pin-icon {
   width: 150px;
   height: auto;
-  margin-bottom: 25px;
+  margin-bottom: 25px;  
+  animation: softPulse 2.1s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@keyframes softPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 .logo-text {
   font-size: 65px;

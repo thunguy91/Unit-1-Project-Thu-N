@@ -17,6 +17,7 @@ export const mockPlaces = [
             sat: "7am - 11pm"
         },
         website: "http://surayaphilly.com/",
+
     },
     {
         id: 2,
@@ -35,7 +36,7 @@ export const mockPlaces = [
             fri: "12pm - 10:30pm",
             sat: "12pm - 10:30pm"
         },
-        website: "http://pizzeriabeddia.com/"
+        website: "http://pizzeriabeddia.com/",
     },
     {
         id: 3,
@@ -54,7 +55,7 @@ export const mockPlaces = [
             frid: "11am - 2am",
             sat: "11am - 2am"
         },
-        website: "http://johnnybrendas.com/"
+        website: "http://johnnybrendas.com/",
     },
     {
         id: 4,
@@ -73,7 +74,7 @@ export const mockPlaces = [
             fri: "12pm - 2am",
             sat: "12pm - 2am"
         },
-        website: "http://barcade.com/"
+        website: "http://barcade.com/",
     },
     {
         id: 5,
@@ -92,7 +93,7 @@ export const mockPlaces = [
             fri: "9am - 2pm; 5pm - 11pm",
             sat: "9am - 2pm; 5pm - 11pm",
         },
-        website: "http://middlechildphilly.com/"
+        website: "http://middlechildphilly.com/",
     },
     {
         id: 6,
@@ -105,7 +106,7 @@ export const mockPlaces = [
         hours: {
             hours: "TBD"
         },
-        website: "http://punchlinephilly.com/"
+        website: "http://punchlinephilly.com/",
     },
     {
         id: 7,
@@ -124,7 +125,7 @@ export const mockPlaces = [
             fri: "5pm - 9:30pm",
             sat: "5pm - 9:30pm"
         },
-        website: "http://hirokisan.com/"
+        website: "http://hirokisan.com/",
     },
     {
         id: 8,
@@ -143,8 +144,8 @@ export const mockPlaces = [
             fri: "11am - 10pm",
             sat: "11am - 10pm"
         },
-        website: "http://shakeshack.com/"
-    },
+        website: "http://shakeshack.com/",
+        },
     {
         id: 9,
         name: "Gilda's",
@@ -162,7 +163,7 @@ export const mockPlaces = [
             fri: "8am - 3pm",
             sat: "8am - 3pm"
         },
-        website: "http://gildaphilly.com/"
+        website: "http://gildaphilly.com/",
     },
     {
         id: 10,
@@ -181,7 +182,7 @@ export const mockPlaces = [
             fri: "5pm - 11pm",
             sat: "11am - 2pm; 5pm - 11pm"
         },
-        website: "http://kalayaphilly.com/"
+        website: "http://kalayaphilly.com/",
     }
 ];
 

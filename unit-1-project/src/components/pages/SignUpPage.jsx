@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
-import './SignUpPage.css';
+import './stylesheets/SignUpPage.css';
 import '../../App.css';
 import dropPin from '../../assets/DropPin.png';
 

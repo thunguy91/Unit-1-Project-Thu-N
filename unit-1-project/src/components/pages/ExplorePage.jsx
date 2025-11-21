@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import { useLocation } from "react-router";
-import { mockPlaces } from "../test-data/mockPlace";
-import PlaceModal from "../modals/PlaceModal";
-import './ExplorePage.css';
+import { useLocation } from 'react-router';
+import { mockPlaces } from '../test-data/mockPlace';
+import PlaceModal from '../modals/PlaceModal';
+import EditListModal from '../modals/EditListModal';
+import MobileViewList from './MobileViewList';
+import './stylesheets/ExplorePage.css';
 import '../../App.css';
 
 export default function ExplorePage() {
@@ -29,6 +31,9 @@ export default function ExplorePage() {
 
     // ----list--- //
     const [list, setList] = useState([]);
+    const [isEditingList, setIsEditingList] = useState(false);
+    const [showList, setShowList] = useState(false);
+
     const addToList = (place)=> {
         setList(prev => [...prev, place]);
         setSelectedPlace(null);
@@ -100,14 +105,28 @@ export default function ExplorePage() {
                     </div>
                 </div>
             </main>
-            <button id="responsiveButton">
-                View my List
-            </button> 
+            <div className='mobile-actions'>
+                <button 
+                    id="mobileButton"
+                    onClick={() => setShowList(prev => !prev)}
+                >
+                    {showList ? "Hide List" : "View My List"}
+                </button> 
 
+                <MobileViewList 
+                    list={list} 
+                    show={showList} 
+                    onClose={() => setShowList(false)}
+                />
+                <button 
+                    id="mobileButton"
+                    onClick={()=> setIsEditingList(true)}
+                >Edit List</button> 
+            </div>
             <div className="list-container"> 
                 <h2>List:</h2> 
 
-                    <ul> 
+                    <ol> 
                         {list.length === 0 ? (
                             <li>No places added yet.</li>
                         ) : (
@@ -115,14 +134,23 @@ export default function ExplorePage() {
                                 <li key={index}>{item.name}</li>
                             ))
                         )}
-                    </ul>
+                    </ol>
 
                 <div className="list-container-buttons"> 
                     <button>Save List</button> 
-                    <button>Edit List</button> 
+                    <button onClick={()=> setIsEditingList(true)}>Edit List</button> 
                 </div> 
             </div>
             
+            {isEditingList && (
+                <EditListModal 
+                    list={list}
+                    setList={setList}
+                    onClose={() => setIsEditingList(false)}
+                />
+            )}
+
+
             {selectedPlace && (
                 <PlaceModal 
                     selectedPlace={selectedPlace} 
