@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import stockPhoto from '../../assets/mobilePhoneNav.jpg';
+import Button from '../Button';
 import '../../App.css';
 import './stylesheets/Home.css';
 import mockStartLocation from '../test-data/mockStartLocation';
@@ -62,7 +63,7 @@ function Home() {
             <div className="form-container">
                 <form onSubmit={(e) => e.preventDefault()}>
                     <div className="form-group">
-                        <label htmlFor="starting-location">Select starting location:</label>
+                        <label className= "start-label" htmlFor="starting-location">Select starting location:</label>
                         <input
                             type="text"
                             id="starting-location"
@@ -75,13 +76,17 @@ function Home() {
                             placeholder="Type your starting location"
                             style={{ fontStyle: usingCurrentLocation ? 'italic' : 'normal' }}
                         />
-                        <button type="button" onClick={handleUseCurrentLocation}>
+                        <Button 
+                            type="button" 
+                            onClick={handleUseCurrentLocation} 
+                            className="current-loc-btn"
+                        >
                             Use current location
-                        </button>
+                        </Button>
                     </div>
 
                     <div className="form-group radius-group">
-                        <label htmlFor="radius">Select radius:</label>
+                        <label className= "start-label" htmlFor="radius">Select radius:</label>
                         <input
                             type="range"
                             id="radius"
@@ -94,7 +99,13 @@ function Home() {
                         <p>Radius: {radius} miles</p>
                     </div>
 
-                    <button type="button" className= "btn" onClick={handleExplore}>Explore!</button>
+                    <Button 
+                        type="button"   
+                        className= "explore-btn" 
+                        onClick={handleExplore}
+                    >
+                        Explore!
+                    </Button>
                 </form>
             </div>
         </div>
