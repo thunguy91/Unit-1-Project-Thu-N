@@ -11,10 +11,20 @@
   margin: auto;
 }
 
-.form-container .btn {
+/* Button .btn{
   width: 9rem;
   text-align: center;
   margin: auto;
+} */
+
+.form-group .current-loc-btn {
+  font-size: 12px;
+  width: 155px;
+}
+
+.explore-btn {
+  width: 150px;
+  align-self: center;
 }
 
 .home-form {
@@ -58,8 +68,6 @@ object-fit: cover;
   font-size: 16px;
   max-width: 100%;
 }
-
-/* added .form-group after adding .radius-output to help center <p> 11.17 */
 
 .form-group {
   display: flex;
@@ -117,6 +125,10 @@ object-fit: cover;
     font-size: 14px;
   }
 
+  .explore-btn {
+    margin-bottom: 1.5rem;
+  }
+
 }
 
 /* Media Query for Galaxy Z Fold 5 (344 x 882) */
@@ -172,7 +184,7 @@ object-fit: cover;
   max-width: 100%;
 }
 
-.btn {
-  font-size: 15px;
+.form-group .start-label {
+  font-size: 17px;
 }
 }
