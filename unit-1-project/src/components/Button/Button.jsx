@@ -1,4 +1,4 @@
-import '../components/pages/stylesheets/Button.css'
+import '/src/components/Button/Button.css'
 
 export default function Button ({
     type = "", 

@@ -5,7 +5,7 @@ import { mockPlaces } from '../test-data/mockPlace';
 import PlaceModal from '../modals/PlaceModal';
 import EditListModal from '../modals/EditListModal';
 import MobileViewList from './MobileViewList';
-import Button from '/src/components/Button.jsx'
+import Button from '/src/components/Button/Button.jsx'
 import './stylesheets/ExplorePage.css';
 import '../../App.css';
 

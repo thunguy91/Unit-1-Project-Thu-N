@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
 import './stylesheets/LogInPage.css';
-import Button from '/src/components/Button.jsx';
+import Button from '/src/components/Button/Button.jsx';
 import Logo from '/src/components/Logo.jsx';
 
 
