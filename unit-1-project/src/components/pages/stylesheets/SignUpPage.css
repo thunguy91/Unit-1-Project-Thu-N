@@ -14,41 +14,6 @@
   box-sizing: border-box;
 }
 
-.logo-container {
-  width: 50%;                
-  height: 75vh;      
-  background-color: #0f283b;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    
-  align-items: center;        
-  text-align: center;
-  padding: 40px 20px;         
-}
-
-.pin-icon {
-  width: 150px;
-  height: auto;
-
-  margin-bottom: 25px;
-}
-
-.logo-text {
-  font-size: 65px;
-  font-family: "Momo Trust Display", sans-serif;
-  font-weight: bold;
-  color: #E6FEFE;
-  margin: 10px 0;
-}
-
-.tagline {
-  font-size: 18px;
-  line-height: 2;
-  color: #a0d6d6;
-  margin-top: 1px;
-  font-style: italic;
-}
-
 .form-container{
     padding: 1px;
 }
@@ -104,13 +69,6 @@ strong {
     gap: 10px;
   }
 
-  .logo-container{
-    width: 100%;
-    height: 30vh;
-    /* position: relative; */
-    padding-top: 120px;
-  }
-
   .form-container form {
     height: 30vh;
     position: relative;
@@ -141,25 +99,6 @@ strong {
     width: 100%;
     height: auto;
   }
-  
-  .logo-container {
-    width: 100%;
-    height: 35vh; 
-    padding: 20px 10px;
-  }
-
-  .pin-icon {
-    width: 4rem;
-  }
-
-  .logo-text {
-    font-size: 35px;
-  }
-
-  .tagline {
-    font-size: 12px;
-    line-height: 1.8;
-  }
 
   .form-container {
     height: 65vh;
@@ -180,12 +119,12 @@ strong {
     font-size: 12px;
   }
 
-  button {
+  /* button {
     font-size: 14px;
     width: 120px;
     padding: 0.3rem 1rem;
     align-self: center;
-  }
+  } */
 
   h4 {
     font-size: 14px;

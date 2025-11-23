@@ -9,49 +9,6 @@
   box-sizing: border-box;
 }
 
-.logo-container {
-  width: 50%;                
-  height: 75vh;      
-  background-color: #0f283b;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    
-  align-items: center;        
-  text-align: center;
-  padding: 40px 20px;         
-}
-
-.pin-icon {
-  width: 150px;
-  height: auto;
-  margin-bottom: 25px;  
-  animation: softPulse 2.1s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes softPulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.06);
-    opacity: 0.85;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-
-.logo-text {
-  font-size: 65px;
-  font-family: "Momo Trust Display", sans-serif;
-  font-weight: bold;
-  color: #E6FEFE;
-  margin: 10px 0;
-}
-
 .error {
   text-align: center;
   color: #ff6b6b;
@@ -66,32 +23,9 @@
   .login-page{
       flex-direction: column;
       height: 100vh;
-      padding: 0px 0px;
+      padding: 8px;
       gap: 0;
 
-  }
-
-  .logo-container{
-  width: 100%;
-  height: 30vh;
-  padding-top: 120px;
-  }
-
-  .pin-icon{
-      width: 5rem;
-      height: auto;
-  }
-
-  .logo-text{
-      font-size: 50px;
-  }
-
-  .tagline{
-      font-size: 16px;
-  }
-
-  .logo-container img {
-      margin-bottom: 1px;
   }
 
     .form-container {
@@ -121,5 +55,13 @@
     font-size: 16px;
     line-height: .5;
   }
+}
 
+/* Media Query for Galaxy Z Fold 5 (344 x 882) */
+
+@media (max-width: 344px) {
+  .login-page {
+    width: 100%;
+    height: auto;
+  }
 }

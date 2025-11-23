@@ -1,0 +1,98 @@
+.logo-container {
+  width: 50%;                
+  height: 75vh;      
+  background-color: #0f283b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  align-items: center;        
+  text-align: center;
+  padding: 40px 20px;         
+}
+
+.pin-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 25px;  
+  animation: softPulse 2.1s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes softPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logo-text {
+  font-size: 65px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: bold;
+  color: #E6FEFE;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 18px;
+  line-height: 2;
+  color: #a0d6d6;
+  margin-top: 1px;
+  font-style: italic;
+}
+/* ----- Media Query for iPad Mini - max-width: 768px ----- */
+
+@media screen and (max-width: 768px) {
+ .logo-container{
+  width: 100%;
+  height: 30vh;
+  padding-top: 120px;
+  }
+
+  .pin-icon{
+      width: 5rem;
+      height: auto;
+  }
+
+  .logo-text{
+      font-size: 50px;
+  }
+
+  .tagline{
+      font-size: 16px;
+  }
+
+  .logo-container img {
+      margin-bottom: 1px;
+  }
+}
+
+/* --- Media Query for Galaxy Z Fold 5 (344 x 882) --- */
+
+@media screen and (max-width: 344px) {
+    .logo-container {
+    width: 100%;
+    height: 35vh; 
+    padding: 20px 10px;
+  }
+
+  .pin-icon {
+    width: 4rem;
+  }
+
+  .logo-text {
+    font-size: 35px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
