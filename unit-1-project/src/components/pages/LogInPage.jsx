@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router'
 import dropPin from '../../assets/DropPin.png'
 import './stylesheets/LogInPage.css'
+import Button from '/src/components/Button.jsx'
 import { useState } from 'react'
 
 export default function LogIn(){
@@ -73,7 +74,7 @@ export default function LogIn(){
 
                     {loginError && <p className="error">{loginError}</p>}
                     <br />
-                    <button type='submit' className='btn'>Log In</button>
+                    <Button type='submit' className='btn'>Log In</Button>
                 </form>
                 <h4>
                     Don't have an account? 

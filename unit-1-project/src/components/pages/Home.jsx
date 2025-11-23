@@ -81,7 +81,7 @@ function Home() {
                             onClick={handleUseCurrentLocation} 
                             className="current-loc-btn"
                         >
-                            Use current location
+                            Use current location   
                         </Button>
                     </div>
 

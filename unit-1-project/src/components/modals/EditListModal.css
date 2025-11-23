@@ -8,6 +8,10 @@
     text-align: center;         
 }
 
+.rmv-btn:hover {
+    border-width: 1px;
+}
+
 .edit-list-item {
     display: flex;
     justify-content: space-between;

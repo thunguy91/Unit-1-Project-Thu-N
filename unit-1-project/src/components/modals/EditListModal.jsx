@@ -1,5 +1,6 @@
 import "./EditListModal.css";
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
+import Button from '/src/components/Button.jsx';
 
 export default function EditListModal({ list, setList, onClose }) {
 
@@ -49,10 +50,10 @@ export default function EditListModal({ list, setList, onClose }) {
 
                                                 <span className="item-name">{item.name}</span>
 
-                                                <button 
+                                                <Button 
                                                     className="rmv-btn"
                                                     onClick={() => handleRemove(index)}
-                                                >Remove</button>
+                                                >Remove</Button>
                                                 
                                             
                                             </li>
@@ -65,7 +66,7 @@ export default function EditListModal({ list, setList, onClose }) {
                 </DragDropContext>
 
                 <div className="done-edit-btn">
-                    <button onClick={onClose}>Done</button>
+                    <Button onClick={onClose}>Done</Button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 .form-container .btn {
-  width: 16rem;
+  width: 12rem;
   align-self: center;
 }
 
@@ -91,6 +91,10 @@ strong {
     font-weight: 700;
 }
 
+.form-container .error {
+  font-size: 11px;
+}
+
 /* Media Query for iPad Mini - max-width: 768px */
 
 @media screen and (max-width: 768px) {
@@ -104,20 +108,27 @@ strong {
     width: 100%;
     height: 30vh;
     /* position: relative; */
-    padding: 20px;
+    padding-top: 120px;
   }
 
   .form-container form {
     height: 30vh;
     position: relative;
+    /* margin-bottom: 4rem; */
+    padding-bottom: 4rem;
   }
 
   .form-container form label{
-    padding: 9px;
+    padding: 6px;
+  }
+
+  form input {
+    /* gap: 0px; */
+    padding: px;
   }
 
   .form-container .btn {
-    width: 12rem;
+    width: 10rem;
     align-self: center;
   }
 
