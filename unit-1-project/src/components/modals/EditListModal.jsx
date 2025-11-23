@@ -1,6 +1,6 @@
 import "./EditListModal.css";
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
-import Button from '/src/components/Button.jsx';
+import Button from '/src/components/Button/Button.jsx';
 
 export default function EditListModal({ list, setList, onClose }) {
 

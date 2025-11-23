@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import stockPhoto from '../../assets/mobilePhoneNav.jpg';
-import Button from '../Button';
+import Button from '/src/components/Button/Button.jsx';
 import '../../App.css';
 import './stylesheets/Home.css';
 import mockStartLocation from '../test-data/mockStartLocation';

@@ -1,6 +1,6 @@
 import React from "react";
 import './PlaceModal.css'; 
-import Button from '/src/components/Button.jsx'
+import Button from '/src/components/Button/Button.jsx'
 
 export default function PlaceModal({ selectedPlace, onClose, onAdd }) {
     if (!selectedPlace) return null;
