@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './stylesheets/SignUpPage.css';
 import '../../App.css';
 import dropPin from '../../assets/DropPin.png';
+import Button from '/src/components/Button.jsx'
 
  
 export default function SignUp(){
@@ -98,14 +99,15 @@ export default function SignUp(){
                         <p className='error'>{errors.confirmPassword}</p>
                     }
                     <br />
-                    <button type= 'submit' className= 'btn'>
+                    <Button type= 'submit' className= 'btn'>
                         Sign Up
-                    </button>
+                    </Button>
                 </form>
                 <br />
                 <h4>
                     Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
                 </h4>
+                
             </div>
         </div>
     )
