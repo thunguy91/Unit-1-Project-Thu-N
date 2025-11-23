@@ -1,12 +1,8 @@
-button {
-  padding: 0.15rem .75rem;
-  background-color:#0f283b;
-  border-radius: 30px;
-  color: #E6FEFE;
-  cursor: pointer;
-  transition: background 0.2s;
-
+.form-container .btn {
+  width: 16rem;
+  align-self: center;
 }
+
 .signup-page {
   display: flex;
   justify-content: center;
@@ -70,11 +66,8 @@ button {
 
 .form-container input {
   width: 70%;
-  /* height: ; */
   align-self: center;
   padding: 8px;
-  /* margin-top: 2px;
-  margin-bottom: 10px; */
   font-size: 16px;
 }
 
@@ -101,72 +94,31 @@ strong {
 /* Media Query for iPad Mini - max-width: 768px */
 
 @media screen and (max-width: 768px) {
-    .signup-page{
-        flex-direction: column;
-        height: 100vh;
-        padding: 0px 0px;
-        gap: 0;
-    }
-
-    .logo-container{
-    width: 100%;
-    height: 35%;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    }
-
-    .pin-icon{
-        width: 5rem;
-        height: auto;
-    }
-
-    .logo-text{
-        font-size: 50px;
-    }
-
-    .tagline{
-        font-size: 16px;
-    }
-
-    .logo-container img {
-        margin-bottom: 1px;
-    }
-
-    .form-container {
-    width: 100%;
-    height: 60vh;
-    padding: 0px 20px;
-    display: flex;
+  .signup-page {
     flex-direction: column;
-    justify-content: center;   
-    align-items: center;   
+    padding: 10px;
+    gap: 10px;
   }
 
-    .form-container form {
-    padding-top: 5px;
+  .logo-container{
     width: 100%;
-    max-width: 350px; 
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-evenly;
-    gap: 0;
+    height: 30vh;
+    /* position: relative; */
+    padding: 20px;
   }
 
-
-  .form-container label {
-    margin-top: 0;
-    margin-bottom: 0px;
-    font-size: 16px;
-    line-height: .5;
+  .form-container form {
+    height: 30vh;
+    position: relative;
   }
 
+  .form-container form label{
+    padding: 9px;
+  }
 
-
-  .form-container input {
-    width: 100%;
-    padding: 6px;
-    margin: 0;
+  .form-container .btn {
+    width: 12rem;
+    align-self: center;
   }
 
 }
@@ -221,6 +173,7 @@ strong {
     font-size: 14px;
     width: 120px;
     padding: 0.3rem 1rem;
+    align-self: center;
   }
 
   h4 {
