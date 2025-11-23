@@ -2,8 +2,8 @@ import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
 import './stylesheets/SignUpPage.css';
 import '../../App.css';
-import dropPin from '../../assets/DropPin.png';
 import Button from '/src/components/Button.jsx'
+import Logo from '/src/components/Logo.jsx'
 
  
 export default function SignUp(){
@@ -51,18 +51,7 @@ export default function SignUp(){
 
     return(
         <div className= 'signup-page'>
-            <div className= 'logo-container'>
-                <div className= 'logo'>
-                    <img src={dropPin} alt= 'Drop Pin' className= 'pin-icon' />
-                    <h1 className= 'logo-text'>RADII</h1>
-                </div>
-                <p className= 'tagline'>
-                    SMALL CIRCLE.<br />
-                    BIG DISCOVERIES.<br />
-                    POWERED BY CURIOSITY.
-                </p>
-            </div>
-
+            <Logo/>
             <div className= 'form-container'>
                 <form onSubmit={handleSubmit}>
                     <label>Name:</label>

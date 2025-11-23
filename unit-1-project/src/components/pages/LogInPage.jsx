@@ -1,8 +1,9 @@
-import { Link, useNavigate } from 'react-router'
-import dropPin from '../../assets/DropPin.png'
-import './stylesheets/LogInPage.css'
-import Button from '/src/components/Button.jsx'
-import { useState } from 'react'
+import { Link, useNavigate } from 'react-router';
+import { useState } from 'react';
+import './stylesheets/LogInPage.css';
+import Button from '/src/components/Button.jsx';
+import Logo from '/src/components/Logo.jsx';
+
 
 export default function LogIn(){
     const navigate = useNavigate();
@@ -42,18 +43,7 @@ export default function LogIn(){
     }
     return(
         <div className='login-page'>
-            <div className="logo-container">
-                <div className='logo'>
-                    <img src={dropPin} alt="Drop Pin" className="pin-icon" />
-                    <h1 className="logo-text">RADII</h1>
-                </div>
-                <p className="tagline">
-                    SMALL CIRCLE.<br />
-                    BIG DISCOVERIES.<br />
-                    POWERED BY CURIOSITY.
-                </p>
-            </div>
-                       
+            <Logo/>
             <div className="form-container">
                 <form onSubmit={handleSubmit}>
                     <label>Email:</label>
