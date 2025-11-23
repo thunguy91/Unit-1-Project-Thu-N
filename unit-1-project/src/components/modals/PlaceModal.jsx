@@ -1,5 +1,6 @@
 import React from "react";
 import './PlaceModal.css'; 
+import Button from '/src/components/Button.jsx'
 
 export default function PlaceModal({ selectedPlace, onClose, onAdd }) {
     if (!selectedPlace) return null;
@@ -33,8 +34,8 @@ export default function PlaceModal({ selectedPlace, onClose, onAdd }) {
                     )}
                 </div>
 
-                <button onClick={() => onAdd(selectedPlace)}>Add to List</button>
-                <button onClick={onClose}>Close</button>
+                <Button onClick={() => onAdd(selectedPlace)}>Add to List</Button>
+                <Button onClick={onClose}>Close</Button>
             </div>
         </div>
     );

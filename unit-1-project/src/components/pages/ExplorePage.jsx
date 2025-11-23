@@ -5,6 +5,7 @@ import { mockPlaces } from '../test-data/mockPlace';
 import PlaceModal from '../modals/PlaceModal';
 import EditListModal from '../modals/EditListModal';
 import MobileViewList from './MobileViewList';
+import Button from '/src/components/Button.jsx'
 import './stylesheets/ExplorePage.css';
 import '../../App.css';
 
@@ -87,7 +88,7 @@ export default function ExplorePage() {
                     </GoogleMap>
 
                     <div className="places-container">
-                        <button className="up-left" onClick={handleScrollUp}>▲</button>
+                        <Button className="up-left" onClick={handleScrollUp}>▲</Button>
 
                         <div className="places">
                             {visiblePlaces.map(p => (
@@ -101,27 +102,27 @@ export default function ExplorePage() {
                             ))}
                         </div>
 
-                        <button className="down-right" onClick={handleScrollDown}>▼</button>
+                        <Button className="down-right" onClick={handleScrollDown}>▼</Button>
                     </div>
                 </div>
             </main>
             <div className='mobile-actions'>
-                <button 
+                <Button 
                     id="mobileButton"
                     onClick={() => setShowList(prev => !prev)}
                 >
                     {showList ? "Hide List" : "View My List"}
-                </button> 
+                </Button> 
 
                 <MobileViewList 
                     list={list} 
                     show={showList} 
                     onClose={() => setShowList(false)}
                 />
-                <button 
+                <Button 
                     id="mobileButton"
                     onClick={()=> setIsEditingList(true)}
-                >Edit List</button> 
+                >Edit List</Button> 
             </div>
             <div className="list-container"> 
                 <h2>List:</h2> 
@@ -137,8 +138,8 @@ export default function ExplorePage() {
                     </ol>
 
                 <div className="list-container-buttons"> 
-                    <button>Save List</button> 
-                    <button onClick={()=> setIsEditingList(true)}>Edit List</button> 
+                    <Button>Save List</Button> 
+                    <Button onClick={()=> setIsEditingList(true)}>Edit List</Button> 
                 </div> 
             </div>
             
