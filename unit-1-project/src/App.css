@@ -3,7 +3,14 @@
   font-weight: normal;
 }
 
+.whole-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .main-container {
+  flex-grow: 1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

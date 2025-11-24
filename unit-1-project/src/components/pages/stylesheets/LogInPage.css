@@ -9,14 +9,6 @@
   box-sizing: border-box;
 }
 
-.error {
-  text-align: center;
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-top: -5px;
-  margin-bottom: 10px;
-}
-
 /* Media Query for iPad Mini - max-width: 768px */
 
 @media screen and (max-width: 768px) {
@@ -38,7 +30,7 @@
     align-items: center;   
   }
 
-    .form-container form {
+    .form-container Form {
     width: 100%;
     max-width: 350px; 
     display: flex;
@@ -48,13 +40,6 @@
     gap: 0;
   }
 
-
-  .form-container label {
-    margin-top: 0;
-    margin-bottom: 0px;
-    font-size: 16px;
-    line-height: .5;
-  }
 }
 
 /* Media Query for Galaxy Z Fold 5 (344 x 882) */

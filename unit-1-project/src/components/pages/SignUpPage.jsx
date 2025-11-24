@@ -2,102 +2,89 @@ import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
 import './stylesheets/SignUpPage.css';
 import '../../App.css';
-import Button from '/src/components/Button/Button.jsx'
-import Logo from '/src/components/Logo.jsx'
+import Button from '/src/components/Button/Button.jsx';
+import Logo from '/src/components/Logo.jsx';
+import Form from '/src/components/Form/Form.jsx';
 
- 
-export default function SignUp(){
+export default function SignUp() {
     const navigate = useNavigate();
+    const [signupError, setSignupError] = useState('');
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
-    const [errors,setErrors] = useState({});
+    const mockUser = {
+        email: "thunguyen88@email.com"
+    };
 
-    function handleSubmit(e) {
-        e.preventDefault();
-
-        let formErrors = {};
-
-        if (!name.trim()) {
-            formErrors.name = 'Name is required.';
+    const fields = [
+        {
+            name: 'name',
+            label: 'Name',
+            type: 'text',
+            required: true
+        },
+        {
+            name: 'email',
+            label: 'Email',
+            type: 'email',
+            required: true,
+            validate: (value) => {
+                if (!/\S+@\S+\.\S+/.test(value)) {
+                    return "Enter a valid email.";
+                }
+                if (value === mockUser.email) {
+                    return "This email already has an account.";
+                }
+                return "";
+            }
+        },
+        {
+            name: 'password',
+            label: 'Password',
+            type: 'password',
+            required: true,
+            validate: (value) =>
+                value.length < 8 ? "Password must be at least 8 characters." : ""
+        },
+        {
+            name: 'confirmPassword',
+            label: 'Confirm Password',
+            type: 'password',
+            required: true,
+            validate: (value, allValues) => {
+                if (!value.trim()) return "Confirm your password.";
+                if (value !== allValues.password) return "Passwords do not match.";
+                return "";
+            }
         }
-        if (!email.trim()) {
-            formErrors.email = 'Email is required.';
-        } else if (!/\S+@\S+\.\S+/.test(email)) {
-            formErrors.email = 'Enter a valid email.';
-        }
+    ];
 
-        if (!password.trim()) {
-            formErrors.password = 'Password is required.';
-        } else if (password.length < 6) {
-            formErrors.password = 'Password must be at least 6 characters.';
-        }
+    const handleSubmit = (values) => {
+        navigate('/home');
+    };
 
-        if (!confirmPassword.trim()) {
-            formErrors.confirmPassword = 'Confirm your password.';
-        } else if (confirmPassword !== password) {
-            formErrors.confirmPassword = 'Passwords do not match.';
-        }
+    return (
+        <div className="signup-page">
+            <Logo />
 
-        setErrors(formErrors);
+            <div className="form-container">
+                <Form
+                    fields={fields}
+                    onSubmit={handleSubmit}
+                    renderSubmitButton={() => (
+                        <Button type="submit" className="btn">
+                            Sign Up
+                        </Button>
+                    )}
+                />
 
-        if (Object.keys(formErrors).length > 0) return;
-
-        navigate ('/home');
-    }
-
-
-    return(
-        <div className= 'signup-page'>
-            <Logo/>
-            <div className= 'form-container'>
-                <form onSubmit={handleSubmit}>
-                    <label>Name:</label>
-                    <input 
-                        type= 'text'
-                        value={name}
-                        onChange={(e)=> setName(e.target.value)}
-                    />
-                    {errors.name && <p className= 'error'>{errors.name}</p>}
-                    
-                    <label>Email:</label>
-                    <input 
-                        type= 'email'
-                        value={email}
-                        onChange={(e)=> setEmail(e.target.value)}
-                    />
-                    {errors.email && <p className= 'error'>{errors.email}</p>}
-                    
-                    <label>Password:</label>
-                    <input 
-                        type= 'password'
-                        value={password}
-                        onChange={(e)=> setPassword(e.target.value)}
-                    />
-                    {errors.password && <p className= 'error'>{errors.password}</p>}
-                    
-                    <label>Confirm Password:</label>
-                    <input 
-                        type= 'password'
-                        value={confirmPassword}
-                        onChange={(e)=> setConfirmPassword(e.target.value)}
-                    />
-                    {errors.confirmPassword && 
-                        <p className='error'>{errors.confirmPassword}</p>
-                    }
-                    <br />
-                    <Button type= 'submit' className= 'btn'>
-                        Sign Up
-                    </Button>
-                </form>
+                {signupError && <p className="error">{signupError}</p>}
                 <br />
                 <h4>
-                    Already have an account? <Link to='/'><strong>Log in</strong>.</Link>
+                    Already have an account?{" "}
+                    <Link to="/">
+                        <strong>Log in</strong>.
+                    </Link>
                 </h4>
-                
             </div>
         </div>
-    )
+    );
 }

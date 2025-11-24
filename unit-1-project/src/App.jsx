@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-      <div>
+      <div className='whole-page'>
         {!shouldHideHeader && <Header />}
 
         <Routes>
