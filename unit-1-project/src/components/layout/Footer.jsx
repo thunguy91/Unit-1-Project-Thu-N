@@ -24,9 +24,9 @@ export default function Footer(){
         </nav>
 
         <div className="footer-social"> 
-          <a href="https://instagram.com"><FaInstagram/></a>
-          <a href="https://facebook.com"><FaFacebookF/></a>
-          <a href="https://twitter.com"><FaTwitter/></a>
+          <a target="_blank" href="https://instagram.com"><FaInstagram/></a>
+          <a target="_blank" href="https://facebook.com"><FaFacebookF/></a>
+          <a target="_blank" href="https://twitter.com"><FaTwitter/></a>
         </div>
       </div>
       
