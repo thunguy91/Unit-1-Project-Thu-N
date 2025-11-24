@@ -32,7 +32,7 @@
 
 .footer-nav {
   display: flex;
-  gap: 25px;                         /* spacing between About / Contact */
+  gap: 25px;                      
   list-style: none;
 }
 
@@ -52,7 +52,7 @@
 
 .footer-social {
   display: flex;
-  gap: 18px;                          /* space between social icons */
+  gap: 18px;                    
 }
 
 .footer-social a {
@@ -97,7 +97,7 @@
 
     .footer-social {
     display: flex;
-    gap: 10px;                          /* space between social icons */
+    gap: 10px;              
     }
 
     .footer-social a {

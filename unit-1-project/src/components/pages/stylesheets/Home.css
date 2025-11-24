@@ -130,12 +130,9 @@ object-fit: cover;
   .img-container{
     width: 330px;
     max-height: 450px;
-    /* overflow: hidden; */
-
   }
 
   .img-container img{
-    /* flex-shrink: 1; */
     display: block;
     object-fit: cover;
     object-position: 57% 80%;
