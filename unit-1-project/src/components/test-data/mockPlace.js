@@ -40,22 +40,22 @@ export const mockPlaces = [
     },
     {
         id: 3,
-        name: "Johnny Brenda's",
-        thumbnail: "https://www.visitphilly.com/wp-content/uploads/2018/02/Johnny-Brendas-exterior-G-Widman-2200VP.jpg",
-        rating: 4.1,
-        address: "1201 Frankford Ave",
-        price: "$-$$$",
-        type: ["American Bar Food", "Bar"],
+        name: "Kalaya",
+        thumbnail: "https://platform.philly.eater.com/wp-content/uploads/sites/8/chorus/uploads/chorus_asset/file/24677297/DSC08090.jpg?quality=90&strip=all&crop=16.329778768104%2C0%2C67.340442463791%2C100&w=2400",
+        rating: 4.5,
+        address: "4 W Palmer Street",
+        price: "$$$",
+        type: "Southern Thai",
         hours: {
-            sun: "11am - 2am",
-            mon: "11am - 2am",
-            tues: "11am - 2am",
-            wed: "11am - 2am",
-            thu: "11am - 2am",
-            frid: "11am - 2am",
-            sat: "11am - 2am"
+            sun: "11am - 2pm; 5pm - 10pm",
+            mon: "5pm - 10pm",
+            tues: "5pm - 10pm",
+            wed: "5pm - 10pm",
+            thu: "5pm - 10pm",
+            fri: "5pm - 11pm",
+            sat: "11am - 2pm; 5pm - 11pm"
         },
-        website: "http://johnnybrendas.com/",
+        website: "http://kalayaphilly.com/",
     },
     {
         id: 4,
@@ -167,22 +167,22 @@ export const mockPlaces = [
     },
     {
         id: 10,
-        name: "Kalaya",
-        thumbnail: "https://platform.philly.eater.com/wp-content/uploads/sites/8/chorus/uploads/chorus_asset/file/24677297/DSC08090.jpg?quality=90&strip=all&crop=16.329778768104%2C0%2C67.340442463791%2C100&w=2400",
-        rating: 4.5,
-        address: "4 W Palmer Street",
-        price: "$$$",
-        type: "Southern Thai",
+        name: "Johnny Brenda's",
+        thumbnail: "https://www.visitphilly.com/wp-content/uploads/2018/02/Johnny-Brendas-exterior-G-Widman-2200VP.jpg",
+        rating: 4.1,
+        address: "1201 Frankford Ave",
+        price: "$-$$$",
+        type: ["American Bar Food", "Bar"],
         hours: {
-            sun: "11am - 2pm; 5pm - 10pm",
-            mon: "5pm - 10pm",
-            tues: "5pm - 10pm",
-            wed: "5pm - 10pm",
-            thu: "5pm - 10pm",
-            fri: "5pm - 11pm",
-            sat: "11am - 2pm; 5pm - 11pm"
+            sun: "11am - 2am",
+            mon: "11am - 2am",
+            tues: "11am - 2am",
+            wed: "11am - 2am",
+            thu: "11am - 2am",
+            frid: "11am - 2am",
+            sat: "11am - 2am"
         },
-        website: "http://kalayaphilly.com/",
+        website: "http://johnnybrendas.com/",
     }
 ];
 
