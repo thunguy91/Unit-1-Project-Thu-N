@@ -36,25 +36,6 @@ address {
   font-size: 20px;
 }
 
-/* button, .form-container .btn, form .btn, .btn{
-  padding: 0.15rem .75rem;
-  background-color:#0f283b;
-  border-radius: 30px;
-  color: #E6FEFE;
-  cursor: pointer;
-  text-decoration: none; */
-  /* transition: background 0.2s, border-color 0.5s ease; */
-/* } */
-
-/* button:hover, .btn:hover, .form-container .current-loc-btn:hover, .form-container .btn:hover {
-  background-color: #E6FEFE;
-  color: #0f283b;
-  border: 2px solid #0f283b;
-  border-color: #0f283b; 
-  text-decoration: none;
-  font-weight: bold;
-} */
-
 li {
 line-height: 2;
 }
