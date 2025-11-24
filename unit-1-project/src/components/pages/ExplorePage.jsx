@@ -4,6 +4,7 @@ import { useLocation } from 'react-router';
 import { mockPlaces } from '../test-data/mockPlace';
 import PlaceModal from '../modals/PlaceModal';
 import EditListModal from '../modals/EditListModal';
+import SaveList from '../modals/SaveList';
 import MobileViewList from './MobileViewList';
 import Button from '/src/components/Button/Button.jsx'
 import './stylesheets/ExplorePage.css';
@@ -34,6 +35,8 @@ export default function ExplorePage() {
     const [list, setList] = useState([]);
     const [isEditingList, setIsEditingList] = useState(false);
     const [showList, setShowList] = useState(false);
+    const [isSavingList, setIsSavingList] = useState(false);
+
 
     const addToList = (place)=> {
         setList(prev => [...prev, place]);
@@ -138,7 +141,7 @@ export default function ExplorePage() {
                     </ol>
 
                 <div className="list-container-buttons"> 
-                    <Button>Save List</Button> 
+                    <Button onClick={()=> setIsSavingList(true)}>Save List</Button> 
                     <Button onClick={()=> setIsEditingList(true)}>Edit List</Button> 
                 </div> 
             </div>
@@ -150,6 +153,11 @@ export default function ExplorePage() {
                     onClose={() => setIsEditingList(false)}
                 />
             )}
+
+            {isSavingList && (
+                <SaveList onClose={() => setIsSavingList(false)} />
+            )}
+
 
 
             {selectedPlace && (

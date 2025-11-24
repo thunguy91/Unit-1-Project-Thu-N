@@ -1,6 +1,6 @@
-import React from "react";
+
 import './PlaceModal.css'; 
-import Button from '/src/components/Button/Button.jsx'
+import Button from '/src/components/Button/Button.jsx';
 
 export default function PlaceModal({ selectedPlace, onClose, onAdd }) {
     if (!selectedPlace) return null;
@@ -14,7 +14,7 @@ export default function PlaceModal({ selectedPlace, onClose, onAdd }) {
                 <strong>{selectedPlace.rating}</strong>
                 <em>{Array.isArray(selectedPlace.type) ? selectedPlace.type.join(", ") : selectedPlace.type}</em>
 
-                <div className="modal-content">
+                <div className="modal-info">
                     <p><strong>Address:</strong> {selectedPlace.address}</p>
                     <p><strong>Website:</strong> <a href={selectedPlace.website} target="_blank">{selectedPlace.website}</a></p>
 

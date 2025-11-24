@@ -5,10 +5,12 @@ import '../../App.css';
 import Button from '/src/components/Button/Button.jsx';
 import Logo from '/src/components/Logo.jsx';
 import Form from '/src/components/Form/Form.jsx';
+import SignUpSuccess from '../modals/SignUpSuccess';
 
 export default function SignUp() {
     const navigate = useNavigate();
     const [signupError, setSignupError] = useState('');
+    const [showSuccess, setShowSuccess] = useState(false);
 
     const mockUser = {
         email: "thunguyen88@email.com"
@@ -57,7 +59,16 @@ export default function SignUp() {
         }
     ];
 
-    const handleSubmit = (values) => {
+    // const handleSubmit = (values) => {
+    //     navigate('/home');
+    // };
+
+    const handleSubmit = () => {
+        setShowSuccess(true);
+    };
+
+    const handleSuccessClose = () => {
+        setShowSuccess(false);
         navigate('/home');
     };
 
@@ -85,6 +96,8 @@ export default function SignUp() {
                     </Link>
                 </h4>
             </div>
+            <SignUpSuccess show={showSuccess} onClose={handleSuccessClose} />
+
         </div>
     );
 }

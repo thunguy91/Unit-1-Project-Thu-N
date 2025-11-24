@@ -69,25 +69,31 @@ strong {
     gap: 10px;
   }
 
+  .form-container {
+    padding: 0 40px;
+    max-width: 400px;
+  }
+
   .form-container form {
-    height: 30vh;
+    height: 25vh;
     position: relative;
-    /* margin-bottom: 4rem; */
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 5rem;
+    
   }
 
-  .form-container label{
-    padding: px;
-  }
+  /* .form-container label {
+    padding-top: 2rem;
+  } */
 
-  .form-container input {
-    margin-bottom: 8px;
-  }
-
-  .form-container .btn {
+.form-container Button {
     width: 10rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     align-self: center;
+  }
+
+  h4 {
+    font-size: 16px;
   }
 
 }
