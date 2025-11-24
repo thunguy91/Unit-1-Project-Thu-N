@@ -38,7 +38,7 @@
     object-fit: cover;
 }
 
-.modal-content {
+.modal-info {
     overflow-y: auto;
     max-height: 50vh;
     font-size: 0.9rem;
