@@ -59,10 +59,6 @@ export default function SignUp() {
         }
     ];
 
-    // const handleSubmit = (values) => {
-    //     navigate('/home');
-    // };
-
     const handleSubmit = () => {
         setShowSuccess(true);
     };

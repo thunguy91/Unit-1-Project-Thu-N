@@ -82,10 +82,6 @@ strong {
     
   }
 
-  /* .form-container label {
-    padding-top: 2rem;
-  } */
-
 .form-container Button {
     width: 10rem;
     margin-top: 3rem;
@@ -95,7 +91,6 @@ strong {
   h4 {
     font-size: 16px;
   }
-
 }
 
 /* Media Query for Galaxy Z Fold 5 (344 x 882) */
